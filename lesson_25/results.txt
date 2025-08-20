@@ -1,0 +1,17 @@
+Локатор id='name' знайдено!
+Локатор id='company' знайдено!
+Локатор id='phone' знайдено!
+Локатор id='text_for_help' знайдено!
+Локатор id='policy' знайдено!
+Локатор name='name' знайдено!
+Локатор name='company' знайдено!
+Локатор name='phone' знайдено!
+Локатор name='text_for_help' знайдено!
+Локатор name='policy' знайдено!
+Локатор tag name='input' знайдено!
+Локатор tag name='button' знайдено!
+Локатор tag name='a' знайдено!
+Локатор link text='Політика конфіденційності' знайдено!
+Локатор partial link text='Політикою' знайдено!
+Локатор css selector='button.button_button__MFmXH.btn-primary-secondary' знайдено!
+Локатор xpath='//a[text()='Політика конфіденційності']' знайдено!
