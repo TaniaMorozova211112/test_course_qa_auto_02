@@ -1,0 +1,7 @@
+# Пакети Python
+# psycopg2-binary: драйвер для PostgreSQL
+psycopg2-binary
+
+# pytest: фреймворк для тестування
+pytest
+
