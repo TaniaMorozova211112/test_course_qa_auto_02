@@ -1,0 +1,4 @@
+# Пакети Python
+pytest==8.4.1              # фреймворк для тестування
+allure-pytest==2.15.0      # плагін для генерації Allure звітів
+psycopg2-binary==2.9.7     # драйвер для PostgreSQL
