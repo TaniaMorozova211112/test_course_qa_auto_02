@@ -36,9 +36,9 @@ jobs:
 
     # 5. Встановлення Allure CLI
     - name: Setup Allure CLI
-      uses: actions/setup-allure@v1
+      uses: IlyaTeterin/setup-allure@v1
       with:
-        version: 2.27.2
+        allure-version: 2.27.2
 
     # 6. Генерація HTML-звіту Allure
     - name: Generate Allure Report
@@ -51,4 +51,3 @@ jobs:
       with:
         name: allure-html-report
         path: allure-report/
-        
