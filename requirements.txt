@@ -1,4 +1,6 @@
+# Python-пакети для тестів та Allure
 pytest==7.4.0
 selenium==4.15.0
 allure-pytest==2.15.0
 requests==2.31.0
+
