@@ -3,10 +3,10 @@ name: Python Tests
 on:
   push:
     branches:
-      - main
+      - homework31
   pull_request:
     branches:
-      - main
+      - homework31
 
 jobs:
   test:
@@ -41,4 +41,3 @@ jobs:
       with:
         name: allure-results
         path: allure-results/
-        
