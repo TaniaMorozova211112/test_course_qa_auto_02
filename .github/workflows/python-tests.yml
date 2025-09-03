@@ -34,20 +34,27 @@ jobs:
       run: |
         pytest --alluredir=allure-results
 
-    # 5. Встановлення Allure CLI
-    - name: Setup Allure CLI
-      uses: IlyaTeterin/setup-allure@v1
+    # 5. Встановлення Node.js та NPM
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
       with:
-        allure-version: 2.27.2
+        node-version: '16'
 
-    # 6. Генерація HTML-звіту Allure
+    # 6. Встановлення Allure CLI
+    - name: Install Allure CLI
+      run: |
+        npm install -g allure-commandline --save-dev
+
+    # 7. Генерація Allure звіту
     - name: Generate Allure Report
       run: |
         allure generate allure-results -o allure-report --clean
 
-    # 7. Завантаження HTML як артефакт
-    - name: Upload Allure HTML report
-      uses: actions/upload-artifact@v4
+    # 8. Публікація звіту на GitHub Pages
+    - name: Deploy Allure Report to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
       with:
-        name: allure-html-report
-        path: allure-report/
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: allure-report
+        publish_branch: gh-pages
+        keep_files: false
